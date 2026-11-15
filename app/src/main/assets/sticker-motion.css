@@ -1,0 +1,33 @@
+/* Interaction-only layer. Surface and tag styling lives in sticker.css. */
+.segmented{position:relative;isolation:isolate}
+.segmented-base{position:absolute;inset:0;z-index:-2;pointer-events:none}
+.segmented-base span{position:absolute;background:var(--st-fill);border-radius:999px}
+.segmented::before{content:'';position:absolute;left:var(--choice-left,2px);top:var(--choice-top,2px);width:var(--choice-width,0);height:var(--choice-height,48px);background:var(--st-selected);border-radius:999px;z-index:-1;transition:left 430ms cubic-bezier(.2,1.5,.3,1),width 430ms cubic-bezier(.2,1.5,.3,1),height 200ms;transform:rotate(-1deg)}
+.segmented .sticker-btn,.segmented .sticker-btn[aria-pressed=true]{background:transparent;transform:none}
+.segmented .sticker-btn[aria-pressed=true]{color:var(--st-on-selected)}
+.sticker-btn:active:not(:disabled),.track-row:active,.folder-row:active,#nav button:active{transform:none}
+.transport .play:active{transform:rotate(-3deg)}
+#main{view-transition-name:page-content}
+#top{view-transition-name:page-heading}
+#nav{view-transition-name:page-navigation}
+::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
+::view-transition-group(*){animation-duration:400ms;animation-timing-function:cubic-bezier(.2,1.2,.3,1)}
+::view-transition-old(page-content){animation:page-out 180ms ease-in both}
+::view-transition-new(page-content){animation:page-in 440ms both}
+::view-transition-old(page-heading){animation:heading-out 140ms both}
+::view-transition-new(page-heading){animation:heading-in 380ms both}
+::view-transition-old(page-navigation){animation:heading-out 140ms both}
+::view-transition-new(page-navigation){animation:heading-in 380ms both}
+[data-transition=back]::view-transition-new(page-content){animation-name:page-back}
+[data-transition=focus]::view-transition-new(page-content){animation:focus-in 250ms ease-out both}
+@keyframes page-out{to{opacity:0;transform:translateY(-10px) scale(.985)}}
+@keyframes page-in{0%{opacity:0;transform:translateY(35px) scale(.965)}58%{opacity:1;transform:translateY(-6px) scale(1.01)}80%{transform:translateY(3px) scale(.996)}100%{transform:translateY(0) scale(1)}}
+@keyframes page-back{0%{opacity:0;transform:translateX(-28px) scale(.98)}65%{opacity:1;transform:translateX(5px) scale(1.006)}100%{transform:translateX(0) scale(1)}}
+@keyframes heading-out{to{opacity:0;transform:translateY(-8px)}}
+@keyframes heading-in{0%{opacity:0;transform:translateY(12px)}70%{opacity:1;transform:translateY(-3px)}100%{transform:translateY(0)}}
+@keyframes focus-in{from{opacity:.4}to{opacity:1}}
+#sheet[open]::backdrop{animation:veil-in 220ms ease-out both}
+#sheet[data-closing]::backdrop{animation:veil-out 250ms ease-in both}
+@keyframes veil-in{from{background:#17121e00}to{background:#17121e77}}
+@keyframes veil-out{from{background:#17121e77}to{background:#17121e00}}
+@media(prefers-reduced-motion:reduce){.segmented::before{transition:none}::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}

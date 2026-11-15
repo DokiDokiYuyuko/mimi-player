@@ -1,0 +1,16 @@
+[
+  {
+    "file": "libvlc-3.7.7-64bit.aar",
+    "originalUrl": "https://repo.maven.apache.org/maven2/org/videolan/android/libvlc-all/3.7.7/libvlc-all-3.7.7.aar",
+    "originalSha1": "a02b9e380eddc9349d1e75b8955c0f798867d5a6",
+    "sha256": "ddb1f18add5cf6926dd9d0d221836e255c6cb736b192bddedff97d7c28b7951e",
+    "modifications": "Keep ARM64 and x86_64 only; optional non-runtime libc++ symbol stripping recorded in symbol-stripping.json"
+  },
+  {
+    "file": "ffmpeg-kit-audio-8.1.9-vlc-cxx.aar",
+    "originalUrl": "https://repo.maven.apache.org/maven2/dev/ffmpegkit-maintained/ffmpeg-kit-audio/8.1.9/ffmpeg-kit-audio-8.1.9.aar",
+    "originalSha1": "464fb09a12d2d6d38e40a05394c79843745b129f",
+    "sha256": "3fe21f37f17630c2551b9bf8c3f299201f7a82dd8bd9261309eece527b96183a",
+    "modifications": "Keep ARM64 and x86_64 only; use the shared libc++ supplied by LibVLC"
+  }
+]

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'"
+    />
+    <title>MIMI 耳边</title>
+    <link rel="stylesheet" href="sticker.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="subtitle-tools.css" />
+    <link rel="stylesheet" href="sticker-motion.css" />
+  </head>
+  <body>
+    <header id="top"></header>
+    <main id="main"></main>
+    <section id="mini" hidden aria-label="正在播放"></section>
+    <nav id="nav" aria-label="主导航"></nav>
+    <dialog id="sheet" class="sticker-panel" aria-labelledby="sheet-title">
+      <div class="sheet-head">
+        <span class="sheet-handle" aria-hidden="true"></span>
+        <h2 id="sheet-title" class="sticker-tag"></h2>
+        <button
+          class="sticker-btn icon-button"
+          data-action="close-sheet"
+          aria-label="关闭"
+        ></button>
+      </div>
+      <p id="sheet-notice" class="inline-notice" role="status" hidden></p>
+      <div id="sheet-body"></div>
+    </dialog>
+    <div id="notice" role="status" hidden></div>
+    <script src="subtitles.js"></script>
+    <script src="sticker-motion.js"></script>
+    <script src="subtitle-tools.js"></script>
+    <script src="hidden-space.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

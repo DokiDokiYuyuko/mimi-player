@@ -1,0 +1,41 @@
+{
+  "version": "1.1.7",
+  "originalAarSha1": "185b83659fcdef1a22d0d643766e47cedd32531a",
+  "originalAarSha256": "060587bbec1b6b79f8b1fd02eebfbe638174d7889a6c3cfd6ce3f34b5da4d46b",
+  "modification": "Unmodified upstream Java bindings compiled against SDK36; unchanged upstream ARM64 and x86_64 JNI; unused32-bit ABIs omitted.",
+  "files": [
+    {
+      "file": "Archive.java",
+      "url": "https://raw.githubusercontent.com/zhanghai/libarchive-android/v1.1.7/library/src/main/java/me/zhanghai/android/libarchive/Archive.java",
+      "sha256": "17a366726df9143fd77aa9c26b2b63ce4dc5f67381e42e9421b654dd767977bc"
+    },
+    {
+      "file": "ArchiveEntry.java",
+      "url": "https://raw.githubusercontent.com/zhanghai/libarchive-android/v1.1.7/library/src/main/java/me/zhanghai/android/libarchive/ArchiveEntry.java",
+      "sha256": "e4257d3b442c16ba78f89e44e5c071bef4b396e9896f58e1ff1f5a0e10c65974"
+    },
+    {
+      "file": "ArchiveException.java",
+      "url": "https://raw.githubusercontent.com/zhanghai/libarchive-android/v1.1.7/library/src/main/java/me/zhanghai/android/libarchive/ArchiveException.java",
+      "sha256": "ea6cf3e0a2104d55a9e28049bac61b16f9f62cc045ed569a51f66ac3ab41d4c3"
+    },
+    {
+      "file": "app/src/main/jniLibs/arm64-v8a/libarchive-jni.so",
+      "sha256": "435a83d238e251be55bc50f597dba0ce0f88dd7459c4e87bb992930498931985",
+      "elfLoadAlignments": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "file": "app/src/main/jniLibs/x86_64/libarchive-jni.so",
+      "sha256": "53e77efdb2ee0d60773eb50492716802bddaee6a5337b40191bf9ac6b358b79d",
+      "elfLoadAlignments": [
+        16384,
+        16384,
+        16384
+      ]
+    }
+  ]
+}

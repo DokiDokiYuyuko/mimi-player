@@ -1,0 +1,38 @@
+[
+  {
+    "path": "library/src/main/jni/external/bzip2",
+    "mode": "160000",
+    "type": "commit",
+    "sha": "6a8690fc8d26c815e798c588f796eabe9d684cf0"
+  },
+  {
+    "path": "library/src/main/jni/external/libarchive",
+    "mode": "160000",
+    "type": "commit",
+    "sha": "7219b0134d771dc4b51bf86b4d01761b87398b1b"
+  },
+  {
+    "path": "library/src/main/jni/external/lz4",
+    "mode": "160000",
+    "type": "commit",
+    "sha": "ebb370ca83af193212df4dcbadcc5d87bc0de2f0"
+  },
+  {
+    "path": "library/src/main/jni/external/mbedtls",
+    "mode": "160000",
+    "type": "commit",
+    "sha": "068ff080b369adfac81509f9b57b2afabaf82dc5"
+  },
+  {
+    "path": "library/src/main/jni/external/xz",
+    "mode": "160000",
+    "type": "commit",
+    "sha": "d3e650e63c110e830fd5391e7f8b45df0b91d3da"
+  },
+  {
+    "path": "library/src/main/jni/external/zstd",
+    "mode": "160000",
+    "type": "commit",
+    "sha": "f8745da6ff1ad1e7bab384bd1f9d742439278e99"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "archive": "libvlc-3.7.7-64bit.aar",
+    "library": "jni/arm64-v8a/libc++_shared.so",
+    "before": 9290184,
+    "after": 1374336,
+    "saved": 7915848,
+    "runtimeSectionsUnchanged": true,
+    "allocatedSections": 27,
+    "beforeSha256": "0c52cfab2df0d957d8b346a2bdc5ae8d71feca2591924d77e1cd724d5bf74352",
+    "sha256": "c4c2fe5cbcb1fba0003a31fc7ab29a9bb12df6cc187ec45a806462540e83d93b"
+  },
+  {
+    "archive": "libvlc-3.7.7-64bit.aar",
+    "library": "jni/x86_64/libc++_shared.so",
+    "before": 9015544,
+    "after": 1337488,
+    "saved": 7678056,
+    "runtimeSectionsUnchanged": true,
+    "allocatedSections": 26,
+    "beforeSha256": "e28cb9e0f456caf8498d0e8562b3ac3f73bf78c07555a52b5602396f240abec3",
+    "sha256": "683a1c7cd2f6829fd40bf805739166c5fce35235bf60d2c4e4a95e9f65a342ef"
+  }
+]
